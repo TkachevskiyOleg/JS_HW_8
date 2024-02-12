@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style5.css">
+</head>
+
+<body>
+    <h2>Attendance Marking for Classes</h2>
+
+    <form action="" onsubmit="markAttendance(); return false;">
+        <label for="group">Group:</label>
+        <select id="group" name="group" onchange="updateLectureCount()" required>
+            <option value="group1">Group 1</option>
+            <option value="group2">Group 2</option>
+        </select><br>
+
+        <label for="lecture">Lecture:</label>
+        <select id="lecture" name="lecture" required></select><br>
+
+        <label for="topic">Lesson Topic:</label>
+        <input type="text" id="topic" name="topic" required><br>
+
+        <fieldset id="studentsCheckboxList">
+        </fieldset>
+
+        <button type="submit">Save Attendance</button>
+    </form>
+
+    <table id="attendanceTable">
+        <thead>
+            <tr>
+                <th>Group</th>
+                <th>Lecture</th>
+                <th>Topic</th>
+                <th>Present Students</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <a href="task1.html">1</a>
+    <a href="task2.html">2</a>
+    <a href="task3.html">3</a>
+    <a href="task4.html">4</a>
+    <a href="task6.html">6</a>
+</body>
+</html>

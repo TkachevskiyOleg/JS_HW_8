@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation of train tickets</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style6.css">
+</head>
+
+<body>
+    <form id="bookingForm" onsubmit="return validateDate()">
+        <label for="direction">The direction of the train:</label>
+        <select id="direction" name="direction">
+            <option value="Odessa-Lviv">Odessa-Lviv</option>
+            <option value="Lviv-Odessa">Lviv-Odessa</option>
+        </select>
+
+        <label for="date">Date of trip:</label>
+        <input type="date" id="date" name="date" required>
+
+        <button type="submit">Search</button>
+        <p id="dateError"></p>
+    </form>
+
+    <div id="seatSelection">
+        <h2>Select places to book</h2>
+        <form id="seatSelectionForm">
+            <input type="checkbox" id="seat1" name="seat" value="1">
+            <label for="seat1">1</label>
+
+            <input type="checkbox" id="seat2" name="seat" value="2">
+            <label for="seat2">2</label>
+
+            <input type="checkbox" id="seat3" name="seat" value="3">
+            <label for="seat3">3</label>
+
+            <input type="checkbox" id="seat4" name="seat" value="4">
+            <label for="seat4">4</label>
+
+            <input type="checkbox" id="seat5" name="seat" value="5">
+            <label for="seat5">5</label>
+
+            <input type="checkbox" id="seat6" name="seat" value="6">
+            <label for="seat6">6</label>
+
+            <button type="button" id="btnBook" onclick="bookTickets()">Book tickets</button>
+        </form>
+    </div>
+
+    
+    <ul id="bookedTickets"></ul>
+
+    <a href="task1.html">1</a>
+    <a href="task2.html">2</a>
+    <a href="task3.html">3</a>
+    <a href="task4.html">4</a>
+    <a href="task5.html">5</a>
+</body>
+</html>

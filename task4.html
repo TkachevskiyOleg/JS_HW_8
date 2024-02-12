@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style4.css">
+</head>
+
+<body>
+    <h2>Книжковий магазин</h2>
+
+    <div class="container">
+        <div id="bookList">
+            <div class="book" data-title="Metro 2033">
+                <img src="https://content2.rozetka.com.ua/goods/images/big_tile/372639965.jpg" alt="book1">
+                <p>Манґа Ця порцелянова лялечка закохалася. Том 2</p>
+                <p>Cost: $20</p>
+                <p>Главный герой, Вакана Годжо, который стремится стать мастером кукол Хина, шьет для эксцентричной красавицы-одноклассницы, Марин Китагавы, косплей-костюм.
+                    Однако... он должен успеть за две недели? Вакана убежден, как только он преодолеет это препятствие,
+                    его будет ждать радостное лицо Марин! Косплейная деятельность набирает обороты, а история становится еще более увлекательной!
+                    В манге имеются откровенные сцены! 18+.</p>
+                <button onclick="selectBook(this)">Select</button>
+            </div>
+            <div class="book" data-title="Metro 2034">
+                <img src="https://content1.rozetka.com.ua/goods/images/big_tile/351939556.png" alt="book2">
+                <p>Манґа Томіе. Том 2</p>
+                <p>Cost: $25</p>
+                <p>Культовая манга Джюнджи Ито в двух томах!
+                    Сколько бы раз ее не убивали, эта девушка возвращается снова и снова...
+                    Томиэ Каваками - роковая красавица с длинными черноволосыми волосами и родинкой под левым глазом. Она может соблазнить любого мужчину,
+                    а затем легко толкнуть его на убийство... впрочем, жертвой в основном становится сама Томиэ.
+                    Пока одни любовники стремятся быть только с ней, другие сходят с ума от страха перед несмертной девушкой.
+                    Но вскоре они поймут: сколько бы раз они ее не убивали, миру никогда не избавиться от Томиэ.</p>
+                <button onclick="selectBook(this)">Select</button>
+            </div>
+            <div class="book" data-title="Metro 2035">
+                <img src="https://content1.rozetka.com.ua/goods/images/big/372678880.jpg" alt="book3">
+                <p>Манґа Протокол висадки Том 1</p>
+                <p>cost: $18</p>
+                <p>Історія зі всесвіту NieR: Automata!
+
+                    Далеке майбутнє. Іншопланетні загарбники вивільняють на Землю нове озброєння — машинні форми життя. Людство, змушене тікати на поверхню Місяця, створює бойових андроїдів, які формують армію сил спротиву.
+                    
+                    11941 рік нашої ери. Довготривала війна проти машин зайшла в глухий кут. Аби здобути ініціативу, людство розробляє новий загін жінок-андроїдів YoRHa й відправляє його боронити Землю.
+                    
+                    Тепер вони мусять відвоювати планету задля повернення людства. Проте яке майбутнє очікує на андроїдів, які борються лише заради цієї мети?</p>
+                <button onclick="selectBook(this)">Select</button>
+            </div>
+        </div>
+
+        <form id="orderForm">
+            <label for="quantity">Quantity</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1" required><br>
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="deliveryDate">Date:</label>
+            <input type="date" id="deliveryDate" name="deliveryDate" min="<?php echo date('Y-m-d'); ?>" required><br>
+
+            <label for="deliveryAddress">Addres:</label>
+            <input type="text" id="deliveryAddress" name="deliveryAddress" required><br>
+
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" rows="4"></textarea><br>
+
+            <button type="button" onclick="submitOrder()">Buy</button>
+        </form>
+    </div>
+
+    <div id="orderSummary"></div>
+
+    <a href="task1.html">1</a>
+    <a href="task2.html">2</a>
+    <a href="task3.html">3</a>
+    <a href="task5.html">5</a>
+    <a href="task6.html">6</a>
+</body>
+</html>

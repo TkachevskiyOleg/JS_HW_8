@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+    <h2>Style Text</h2>
+
+    <form id="textForm" onsubmit="return false;">
+        <label for="inputTextArea">Input Text:</label>
+        <textarea id="inputTextArea" name="inputTextArea" required></textarea>
+        
+        <label for="fontSize">Font Size:</label>
+        <input type="number" id="fontSize" name="fontSize" min="10" max="36" value="18">
+       
+        <label for="fontWeight">Font Weight:</label>
+        <select id="fontWeight" name="fontWeight">
+            <option value="normal">Normal</option>
+            <option value="bold">Bold</option>
+        </select>
+        
+        <label for="fontStyle">Font Style:</label>
+        <select id="fontStyle" name="fontStyle">
+            <option value="normal">Normal</option>
+            <option value="underline">Underline</option>
+            <option value="italic">Italic</option>
+        </select>
+        
+        <label for="textAlign">Text Align:</label>
+        <select id="textAlign" name="textAlign">
+            <option value="left">Left</option>
+            <option value="right">Right</option>
+            <option value="justify">Justify</option>
+        </select>
+        
+        <label for="fontColor">Font Color:</label>
+        <input type="color" id="fontColor" name="fontColor" value="#0000ff">
+        <br><br>
+        <button onclick="applyStyles()">Start</button>
+    </form>
+
+    <div id="styledText"></div>
+    <a href="task1.html">1</a>
+    <a href="task2.html">2</a>
+    <a href="task4.html">4</a>
+    <a href="task5.html">5</a>
+    <a href="task6.html">6</a>
+</body>
+</html>

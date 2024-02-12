@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ece6da;
+}
+
+form {
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#seatSelection {
+    display: none;
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    background-color: #ece6da;
+    border: 1px solid black;
+}
+
+#seatSelectionForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#seatSelectionForm input {
+    margin: 5px;
+}
+
+#bookedTickets {
+    list-style-type: none;
+    padding: 0;
+}
+
+#bookedTickets li {
+    margin: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+#direction {
+    margin-bottom: 10px;
+}
+
+#btnBook {
+    margin-top: 10px;
+    height: 40px;
+}
+
+#dateError {
+    color: red;
+    margin-top: 5px;
+}
